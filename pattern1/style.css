@@ -1,1 +1,189 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap'); /* 'Sawarabi Mincho', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* font-family: 'Permanent Marker', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #fffacd;
+}
+
+.logo-wrapper {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 64px;
+    text-align: center;
+    padding: 48px;
+}
+
+.nav-wrapper {
+    margin: 0 15vw;
+    padding-bottom: 48px;
+}
+
+.box {
+    box-sizing: border-box;
+}
+
+.box-nav {
+    width: 100%;
+    height: 40px;
+}
+  
+.inner-nav {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 40px;
+    list-style: none;
+}
+  
+.menu {
+    position: relative;
+    padding: 0 4em;
+    cursor: pointer;
+}
+
+.inner-nav :nth-child(1) {
+    background: url(SVG/shopping.svg) left 16px top 8px no-repeat;
+}
+
+.inner-nav :nth-child(2) {
+    background: url(SVG/topic.svg) left 16px top 8px no-repeat;
+}
+
+.inner-nav :nth-child(3) {
+    background: url(SVG/about.svg) left 16px top 8px no-repeat;
+}
+
+.inner-nav :nth-child(4) {
+    background: url(SVG/access.svg) left 16px top 8px no-repeat;
+}
+
+.inner-nav :nth-child(5) {
+    background: url(SVG/contact.svg) left 16px top 8px no-repeat;
+}
+
+.menu:not(:first-of-type)::before {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 1px;
+    height: 50%;
+    content: '';
+    background: #3a3a3a;
+}
+  
+.menu:hover {
+    opacity: 0.7;
+}
+
+.button-design {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.button-design:focus {
+    outline: 0;
+}
+
+.cards-wrapper {
+    text-align: center;
+}
+
+.blog-cards-img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-cards {
+    width: calc(( 100% - 15vw ) / 3);
+    margin: 10px 10px;
+    cursor: pointer;
+    border: 0.5px solid #d3d3d3;
+    border-radius: 3px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.blog-cards-img {
+    text-align: center;
+}
+
+.content {
+    padding: 0.4em 0;
+    text-align: left;
+}
+  
+.title,
+.post-day {
+    position: relative;
+    padding: 0 0.3em;
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+  
+.post-day {
+    padding: 0 0.3em;
+    font-size: 0.6em;
+    color: #777;
+}
+
+.contents-wrapper {
+    margin: 0 15vw;
+}
+
+.contents-section {
+    padding: 120px 0;
+}
+
+.contents-title {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 48px;
+    margin: 0 32px;
+}
+
+.contents-text {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 24px;
+}
+
+.contents-access {
+    text-align: center;
+}
+
+.keyword {
+    text-align: center;
+    padding: 10vh;
+}
+
+.social-link-wrapper {
+    text-align: center;
+}
+
+.social-link {
+    margin: 32px auto;
+}
+
+.form-wrapper {
+    padding: 0 5vw;
+}
+
+.text-area {
+    width: 100%;
+    height: 240px;
+}
+
+.footer {
+    width: 100%;
+    background: #d2b48c;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 50px;
+}
